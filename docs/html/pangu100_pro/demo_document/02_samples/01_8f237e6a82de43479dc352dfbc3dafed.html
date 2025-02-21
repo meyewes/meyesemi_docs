@@ -1,0 +1,754 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>01 流水灯实验例程 &mdash; 深圳小眼睛-资料下载</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=5a0213dc"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Demo" href="../../2_demo.html" />
+    <link rel="prev" title="PDS安装教程" href="../01_tools/01_85f6a1da5654481dbd683729ec93f4c8.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html">
+            
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Pangu100_pro系列</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../1_demo_document.html">Demo_document</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../1_demo_document.html#id1">工具使用篇</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../../1_demo_document.html#id2">实验例程说明篇</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">01 流水灯实验例程</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../2_demo.html">Demo</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">SMeyeSemi Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Pangu100_pro系列</a></li>
+          <li class="breadcrumb-item"><a href="../../1_demo_document.html">Demo_document</a></li>
+      <li class="breadcrumb-item active">01 流水灯实验例程</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/pangu100_pro/demo_document/02_samples/01_8f237e6a82de43479dc352dfbc3dafed.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>01 流水灯实验例程<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>1.LED 流水灯实验例程</p>
+<p>1.1 MES2L100HP 开发板简介</p>
+<p>MES2L100HP 开发板有8 个用户LED 灯（LED1～8），FPGA 输出高电平时对应的LED
+灯亮灯（详情请查看“MES2L100HP 开发板硬件使用手册”）。</p>
+<p>1.2 实验目的</p>
+<blockquote>
+<div><p>控制8 个LED 灯按顺序依次点亮和熄灭。</p>
+</div></blockquote>
+<p>1.3 实验原理</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">通常的时，分，秒的计时进位大家应该不陌生；</div>
+<div class="line">1 小时=60 分钟=3600 秒，当时针转动1 小时，秒针跳动3600 次；</div>
+</div>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../../_images/image1.png"><img alt="../../../_images/image1.png" src="../../../_images/image1.png" style="width: 1.22083in; height: 1.22083in;" />
+</a>
+<p>在数字电路中的时钟信号也是有固定的节奏的，这种节奏的开始到结束的时间,我们通常称之为周期（T）。</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>微信公众号：小眼睛FPGA</p></th>
+<th class="head"><p>www.meyesemi.com</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../../_images/image3.png"><img alt="../../../_images/image3.png" src="../../../_images/image3.png" style="width: 6.04722in; height: 3.13889in;" />
+</a>
+</div></blockquote>
+<p>控制LED 周期性的维持0.5s 亮,0.5s 灭,需要控制IO 输出0.5s 高电平,0.5s
+低电平周期变化,如下图波形:</p>
+<a class="reference internal image-reference" href="../../../_images/image4.png"><img alt="../../../_images/image4.png" src="../../../_images/image4.png" style="width: 3.04722in; height: 0.99167in;" />
+</a>
+<div class="line-block">
+<div class="line">若使用27MHz 外部输入时钟，则使用计数器计数0.5 秒，需要花费27M/2
+个时钟周期; 0.5s =（27_000_000/2）× T27MHz;</div>
+<div class="line">IO 输出状态只有两种：1 或0；我们可以使用一个计数器，计数满13_500_000
+个时钟周期时变化不同LED 点亮。</div>
+</div>
+<p>1.4 实验源码设计</p>
+<p>1.4.1文件头设计</p>
+<p>在module
+之前添加文件头，文件头中包含信息有：公司，作者，时间，设计名，工程名，模块名，目标器件，EDA
+工具(版本)，模块描述，版本描述（修改描述）等信息；以及仿真时间单位定义；</p>
+<p>2 / 8</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><blockquote>
+<div><p>微</p>
+</div></blockquote>
+<p>信公众号：
+小眼睛FPGA</p>
+</th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"></th>
+<th class="head"><p>www.m
+eyesemi.com</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><dl class="simple">
+<dt>`timescale</dt><dd><p>1ns /
+1ps</p>
+</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><blockquote>
+<div></div></blockquote>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>//Company</p></td>
+<td><blockquote>
+<div><p>:
+MEYESEMI</p>
+</div></blockquote>
+<dl class="simple">
+<dt>Technology</dt><dd><p>CO., Ltd</p>
+</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><dl class="simple">
+<dt>//Internet</dt><dd><p>site</p>
+</dd>
+</dl>
+</td>
+<td><p>:</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>//
+WeChat
+public
+account
+:
+MEYESEMI</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>//Engineer</p></td>
+<td><p>: Nill</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>//</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>//Create
+Date</p></td>
+<td><blockquote>
+<div><p>:</p>
+</div></blockquote>
+<dl class="simple">
+<dt>2022-12-27</dt><dd><p>14:34</p>
+</dd>
+</dl>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>//Design
+Name</p></td>
+<td><p>:
+led_test</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>//Module
+Name</p></td>
+<td><p>:
+led_test</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><dl class="simple">
+<dt>//Project</dt><dd><p>Name</p>
+</dd>
+</dl>
+</td>
+<td><blockquote>
+<div><p>:</p>
+</div></blockquote>
+<p>led_light</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>//Target
+Devices</p></td>
+<td><p>: Pango</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>//Tool
+Versions</p></td>
+<td><p>:</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><blockquote>
+<div><p>//</p>
+</div></blockquote>
+<p>Description</p>
+</td>
+<td><p>:</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>//</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><blockquote>
+<div><p>//D</p>
+</div></blockquote>
+<p>ependencies</p>
+</td>
+<td><p>:</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p>//</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p>//Revision</p></td>
+<td><p>:
+Revision
+0.01 -
+File
+Created</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
+<td><p>/
+/Additional
+Comments</p></td>
+<td></td>
+<td><p>:</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>20</p></td>
+<td><p>//</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>21</p></td>
+<td><blockquote>
+<div></div></blockquote>
+</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>22</p></td>
+<td><p>`define
+UD #1</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">`timescale 1ns / 1ps 表示仿真精度是1ns，显示精度是1ps；</div>
+<div class="line">`define UD #1 定义UD 表示#1；#1
+仅仿真有效，表示延时一个仿真精度，结合上一条语句表示延时1ns；</div>
+</div>
+<blockquote>
+<div><p>1.4.2设计module</p>
+<p>1.4.2.1 创建module，确定输入输出信号</p>
+</div></blockquote>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>module led_light(</p></th>
+<th class="head"><p>clk,</p></th>
+<th class="head"><p>// input clock,
+the frequency is
+50MHz</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>input</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>input</p></td>
+<td><p>rstn,</p></td>
+<td><p>// input reset
+signal, active at
+low</p></td>
+</tr>
+<tr class="row-even"><td><p>output [7:0]</p></td>
+<td><p>led</p></td>
+<td><p>// output LED
+control signal ,
+lignting at high</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>);</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>endmodule</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">此段代码是标准的module 创建的模型，module
+创建时需要确认输入输出信号并定义好位宽，之后在对module
+进行具体的逻辑设计；管脚与管脚之间用“ ,
+”隔开，最后一个管脚不用间隔符号；</div>
+<div class="line">创建module
+时需要定义输入输出信号;本实验输入时钟和复位即可，输出是控制LED
+的亮灭，MES2L100HP 板卡上共有8 个LED，故而输出8bit 位宽的信号；</div>
+<div class="line">1.4.2.2设计一个计数器；</div>
+<div class="line">单个状态计数13_500_000，即13_499_999 =
+24’b1100_1101_1111_1110_0101_1111;所以计数器的位宽为24
+位即可，此处请结合数字电路中的同步计数器的工作原理分析；</div>
+</div>
+<p>3 / 8</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><blockquote>
+<div><p>微</p>
+</div></blockquote>
+<p>信公众号：小眼睛FPGA</p>
+</th>
+<th class="head"></th>
+<th class="head"><p>www.meyesemi.com</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>reg [23:0]
+led_light_cnt;</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><div class="line-block">
+<div class="line">2</div>
+<div class="line">3</div>
+<div class="line">4</div>
+<div class="line">5</div>
+<div class="line">6</div>
+<div class="line">7</div>
+<div class="line">8</div>
+<div class="line">9</div>
+<div class="line">10</div>
+<div class="line">11</div>
+<div class="line">12</div>
+</div>
+</th>
+<th class="head"><p>//</p></th>
+<th class="head"><p>time counter</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td><div class="line-block">
+<div class="line">always &#64;(posedge
+clk) //</div>
+</div>
+<blockquote>
+<div><p>触发条件；posedge</p>
+<dl class="simple">
+<dt>为上升沿，negedge</dt><dd><p>为下降沿begin</p>
+</dd>
+</dl>
+</div></blockquote>
+<div class="line-block">
+<div class="line">if(!rstn)</div>
+<div class="line">led_light_cnt &lt;=
+`UD 24’d0;</div>
+<div class="line">else
+if(led_light_cnt
+==
+24’d13_499_999)</div>
+<div class="line">led_light_cnt &lt;=
+`UD 24’d0;</div>
+<div class="line">else</div>
+<div class="line">led_light_cnt &lt;=
+`UD
+led_light_cnt +
+24’d1;</div>
+<div class="line">end</div>
+</div>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>当计数器计数到24’d13_499_999 时，计数过程包含了从0～24’d13_499_999
+的时钟周期，故而总时长时24’d13_500_000 ×</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>微信公众号：小眼睛FPGA</p></th>
+<th class="head"><p>www.meyesemi.com</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>1.4.3完整的Module（不含注释）</p>
+<blockquote>
+<div><p>1 `timescale 1ns / 1ps</p>
+</div></blockquote>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>2</p></th>
+<th class="head"><p>`define UD #1</p></th>
+<th class="head"><p>clk,</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>3</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>module led_light(</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>input</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>input</p></td>
+<td><p>rstn,</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>output [7:0]</p></td>
+<td><p>led</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>);</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><div class="line-block">
+<div class="line">24</div>
+<div class="line">25</div>
+<div class="line">12</div>
+<div class="line">13</div>
+<div class="line">14</div>
+<div class="line">15</div>
+<div class="line">16</div>
+<div class="line">17</div>
+<div class="line">18</div>
+<div class="line">26</div>
+</div>
+</th>
+<th class="head"><div class="line-block">
+<div class="line">// led status change</div>
+<div class="line">always &#64;(posedge clk)</div>
+<div class="line">begin</div>
+<div class="line">if(!rstn)</div>
+<div class="line">led_status &lt;= `UD
+8’b0000_0001;</div>
+<div class="line">else if(led_light_cnt ==
+24’d13_499_999)</div>
+<div class="line">led_status &lt;= `UD {
+led_status[6:0],
+led_status[7] }; end</div>
+<div class="line">assign led = led_status;</div>
+</div>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>27</p>
+<p>28 endmodule</p>
+<p>29</p>
+<p>1.4.4硬件管脚分配</p>
+<p>MES2L100HP 的LED 和CLK 与FPGA 的IO
+连接部分的原理图如下，详情可查看硬件使用手</p>
+</div></blockquote>
+<p>册或原理图：</p>
+<p>5 / 8</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>微信公众号：小眼睛FPGA</p></th>
+<th class="head"><p>www.meyesemi.com</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><a class="reference internal image-reference" href="../../../_images/image5.png"><img alt="../../../_images/image5.png" src="../../../_images/image5.png" style="width: 5.63472in; height: 2.91806in;" />
+</a>
+</div></blockquote>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>信号</p></th>
+<th class="head"><p>PG2L100H Pin</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>LED1</p></td>
+<td><p>F13</p></td>
+</tr>
+<tr class="row-odd"><td><p>LED2</p></td>
+<td><p>F14</p></td>
+</tr>
+<tr class="row-even"><td><p>LED3</p></td>
+<td><p>E13</p></td>
+</tr>
+<tr class="row-odd"><td><p>LED4</p></td>
+<td><p>E14</p></td>
+</tr>
+<tr class="row-even"><td><p>LED5</p></td>
+<td><p>E16</p></td>
+</tr>
+<tr class="row-odd"><td><p>LED6</p></td>
+<td><p>D16</p></td>
+</tr>
+<tr class="row-even"><td><p>LED7</p></td>
+<td><p>F16</p></td>
+</tr>
+<tr class="row-odd"><td><p>LED8</p></td>
+<td><p>E17</p></td>
+</tr>
+</tbody>
+</table>
+<p>复位设计是低电平有效，MES2L100HP 开发板提供了8
+个用户按键（K1～8），按键低电平有效，但按键按下时，IO
+上的输入电压为低；当没有按下按键时，IO
+上的输入电压为高电平；选择任一个用户按键作为复位输入即可。</p>
+<p>6 / 8</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>微信公众号：小眼睛FPGA</p></th>
+<th class="head"><p>www.meyesemi.com</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../../_images/image6.png"><img alt="../../../_images/image6.png" src="../../../_images/image6.png" style="width: 5.54583in; height: 2.26944in;" />
+</a>
+<p>1.5 实验步骤</p>
+<blockquote>
+<div><p>1.5.1PSD 软件相关</p>
+<div class="line-block">
+<div class="line">（1）PSD 软件安装包获取：</div>
+<div class="line">软件版本：PDS_2022.1</div>
+<div class="line">（注：本文档中所有实验均使用PDS_2022.1
+版本实现）软件安装包位置：MES2L100HP\5_软件工具\PDS2022.1</div>
+</div>
+<div class="line-block">
+<div class="line">（2）PSD 软件license 获取：</div>
+<div class="line">联系“深圳市小眼睛科技”客服人员获取。</div>
+</div>
+<div class="line-block">
+<div class="line">（3）PSD 软件安装流程：</div>
+<div class="line">PSD 软件安装步骤参考文档：MES2L100HP\1_教程说明\工具使用篇\
+01_PDS 安装指导手册</div>
+</div>
+</div></blockquote>
+<div class="line-block">
+<div class="line">（4）PDS 软件使用：</div>
+<div class="line">a.快速使用手册可查看文档：MES2L100HP\1_教程说明\工具使用篇\ 02_PDS
+快速使用手册</div>
+<div class="line">b.PDS 各工具使用可查看：安装路径下doc 文件夹，示意图如下：</div>
+</div>
+<p>7 / 8</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>微信公众号：小眼睛FPGA</p></th>
+<th class="head"><p>www.meyesemi.com</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../../_images/image7.png"><img alt="../../../_images/image7.png" src="../../../_images/image7.png" style="width: 6.76805in; height: 5.2625in;" />
+</a>
+<div class="line-block">
+<div class="line">1.6 下载与Flash 固化</div>
+<div class="line">下载与flash 固化可参考文档：MES2L100HP\1_教程说明\工具使用篇\
+04_FPGA&amp;CPLD 的下载与固化</div>
+</div>
+<div class="line-block">
+<div class="line">1.7 实验现象</div>
+<div class="line">8 颗LED 灯按照设定的顺序和时间依次点亮和熄灭。</div>
+</div>
+<p>8 / 8</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../01_tools/01_85f6a1da5654481dbd683729ec93f4c8.html" class="btn btn-neutral float-left" title="PDS安装教程" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../2_demo.html" class="btn btn-neutral float-right" title="Demo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, 深圳市小眼睛科技有限公司.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

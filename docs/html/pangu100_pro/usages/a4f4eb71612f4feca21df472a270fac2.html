@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDS安装教程 &mdash; SMeyeSemi Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=7d86a446"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Pangupro_100" href="../Demo_document.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../Demo_document.html">Pangupro_100</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../Demo_document.html#id1">工具使用篇</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">PDS安装教程</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Demo_document.html#id2">实验例程说明篇</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SMeyeSemi Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Demo_document.html">Pangupro_100</a></li>
+      <li class="breadcrumb-item active">PDS安装教程</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/pangu100_pro/usages/a4f4eb71612f4feca21df472a270fac2.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pds">
+<h1>PDS安装教程<a class="headerlink" href="#pds" title="Link to this heading"></a></h1>
+<blockquote>
+<div><div class="line-block">
+<div class="line">1．软件简介</div>
+<div class="line">Pango Design Suite 是紫光同创基于多年FPGA
+开发软件技术攻关与工程实践经验而研发的一款拥有国产自主知识产权的大规模FPGA
+开发软件，可以支持千万门级FPGA
+器件的设计开发。该软件支持工业界标准的开发流程，可实现从RTL
+综合到配置数据流生成下载的全套操作。</div>
+</div>
+<p>2．支持平台</p>
+</div></blockquote>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>软件工具</p></th>
+<th class="head"><p>Windows 操作系统</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ADS 综合工具、OEM
+综合工具、PDS 后端工具</p></td>
+<td><p>Windows 7,10,11、</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><div class="line-block">
+<div class="line">3．软件安装</div>
+<div class="line">一般地，将软件安装在C:\pango\
+PDS_2022.1；（此为默认安装路径）。软件安装完成后，会在桌面以及程序菜单中添加快捷方式PangoDesign
+Suite2022.1；在程序菜单Pango Design Suite2022.1 文件夹中包含Pango
+Design Suite、软件卸载的快捷方式Uninstall、程序附件Accessories
+以及软件文档Documents。</div>
+</div>
+<div class="line-block">
+<div class="line">本教程以Pango Design Suite 2022.1 Windows
+版本安装进行说明，下面将详细介绍PDS安装过程：</div>
+<div class="line">3.1 安装程序</div>
+<div class="line">（1）首先关闭电脑所有杀毒软件，否则杀毒软件有可能会拦截一些组件，造成安装失败或功能缺失等不确定结果；</div>
+<div class="line">（2）双击安装包中的安装程序Setup.exe，启动安装程序：</div>
+</div>
+</div></blockquote>
+<p>1 / 11</p>
+<p><a class="reference internal" href="../../_images/image4.png"><img alt="image1" src="../../_images/image4.png" style="width: 5.18056in; height: 4.01407in;" /></a><img alt="image2" src="../../_images/image5.png" /><img alt="image3" src="../../_images/image6.png" /><img alt="image4" src="../../_images/image7.png" /><img alt="image5" src="../../_images/image8.png" /><img alt="image6" src="../../_images/image9.png" /><img alt="image7" src="../../_images/image10.png" /><img alt="image8" src="../../_images/image11.png" /><img alt="image9" src="../../_images/image12.png" /><img alt="image10" src="../../_images/image13.png" /><a class="reference internal" href="../../_images/image14.png"><img alt="image11" src="../../_images/image14.png" style="width: 0.11111in;" /></a><img alt="image12" src="../../_images/image15.png" /><img alt="image13" src="../../_images/image16.png" /><img alt="image14" src="../../_images/image17.png" /><img alt="image15" src="../../_images/image18.png" /><img alt="image16" src="../../_images/image19.png" /><img alt="image17" src="../../_images/image20.png" /><img alt="image18" src="../../_images/image21.png" /><img alt="image19" src="../../_images/image22.png" /><img alt="image20" src="../../_images/image23.png" /><img alt="image21" src="../../_images/image24.png" /><img alt="image22" src="../../_images/image25.png" /><img alt="image23" src="../../_images/image26.png" /><img alt="image24" src="../../_images/image27.png" /><img alt="image25" src="../../_images/image28.png" /><a class="reference internal" href="../../_images/image29.png"><img alt="image26" src="../../_images/image29.png" style="width: 1.15278in; height: 0.18056in;" /></a><img alt="image27" src="../../_images/image30.png" /><img alt="image28" src="../../_images/image31.png" /><a class="reference internal" href="../../_images/image32.png"><img alt="image29" src="../../_images/image32.png" style="width: 2.875in; height: 0.55556in;" /></a><img alt="image30" src="../../_images/image33.png" /><a class="reference internal" href="../../_images/image34.png"><img alt="image31" src="../../_images/image34.png" style="width: 0.125in;" /></a><img alt="image32" src="../../_images/image35.png" /><img alt="image33" src="../../_images/image36.png" /><a class="reference internal" href="../../_images/image37.png"><img alt="image34" src="../../_images/image37.png" style="width: 3.05556in; height: 0.33333in;" /></a><img alt="image35" src="../../_images/image38.png" /><a class="reference internal" href="../../_images/image39.png"><img alt="image36" src="../../_images/image39.png" style="width: 2.54167in; height: 0.23611in;" /></a><a class="reference internal" href="../../_images/image40.png"><img alt="image37" src="../../_images/image40.png" style="width: 0.125in;" /></a><a class="reference internal" href="../../_images/image41.png"><img alt="image38" src="../../_images/image41.png" style="width: 5.10417in; height: 3.95488in;" /></a><img alt="image39" src="../../_images/image42.png" /><img alt="image40" src="../../_images/image43.png" /><img alt="image41" src="../../_images/image44.png" /><img alt="image42" src="../../_images/image45.png" /><img alt="image43" src="../../_images/image46.png" /><img alt="image44" src="../../_images/image47.png" /><img alt="image45" src="../../_images/image48.png" /><img alt="image46" src="../../_images/image49.png" /><img alt="image47" src="../../_images/image50.png" /><img alt="image48" src="../../_images/image51.png" /><img alt="image49" src="../../_images/image52.png" /><img alt="image50" src="../../_images/image53.png" /><img alt="image51" src="../../_images/image54.png" /><img alt="image52" src="../../_images/image55.png" /><img alt="image53" src="../../_images/image56.png" /><img alt="image54" src="../../_images/image57.png" /><img alt="image55" src="../../_images/image58.png" /><img alt="image56" src="../../_images/image59.png" /><img alt="image57" src="../../_images/image60.png" /><img alt="image58" src="../../_images/image61.png" /><img alt="image59" src="../../_images/image62.png" /><img alt="image60" src="../../_images/image63.png" /><img alt="image61" src="../../_images/image64.png" /><img alt="image62" src="../../_images/image65.png" /><img alt="image63" src="../../_images/image66.png" /><img alt="image64" src="../../_images/image67.png" /><img alt="image65" src="../../_images/image68.png" /><img alt="image66" src="../../_images/image69.png" /><img alt="image67" src="../../_images/image70.png" /><a class="reference internal" href="../../_images/image71.png"><img alt="image68" src="../../_images/image71.png" style="width: 0.15278in;" /></a><img alt="image69" src="../../_images/image72.png" /><img alt="image70" src="../../_images/image73.png" /><img alt="image71" src="../../_images/image74.png" /><img alt="image72" src="../../_images/image75.png" /><img alt="image73" src="../../_images/image76.png" /><img alt="image74" src="../../_images/image77.png" /><img alt="image75" src="../../_images/image78.png" /><img alt="image76" src="../../_images/image79.png" /><img alt="image77" src="../../_images/image80.png" /><img alt="image78" src="../../_images/image81.png" /><img alt="image79" src="../../_images/image82.png" /><img alt="image80" src="../../_images/image83.png" /><img alt="image81" src="../../_images/image84.png" /><img alt="image82" src="../../_images/image85.png" /><img alt="image83" src="../../_images/image86.png" /><img alt="image84" src="../../_images/image87.png" /><img alt="image85" src="../../_images/image88.png" /><img alt="image86" src="../../_images/image89.png" /><img alt="image87" src="../../_images/image90.png" /><img alt="image88" src="../../_images/image91.png" /><img alt="image89" src="../../_images/image92.png" /><img alt="image90" src="../../_images/image93.png" /><img alt="image91" src="../../_images/image94.png" /><img alt="image92" src="../../_images/image95.png" /><img alt="image93" src="../../_images/image96.png" /><img alt="image94" src="../../_images/image97.png" /><img alt="image95" src="../../_images/image98.png" /><img alt="image96" src="../../_images/image99.png" /><img alt="image97" src="../../_images/image100.png" /><img alt="image98" src="../../_images/image101.png" /><img alt="image99" src="../../_images/image102.png" /><img alt="image100" src="../../_images/image103.png" /><img alt="image101" src="../../_images/image104.png" /><img alt="image102" src="../../_images/image105.png" /><img alt="image103" src="../../_images/image106.png" /><img alt="image104" src="../../_images/image107.png" /><img alt="image105" src="../../_images/image108.png" /><img alt="image106" src="../../_images/image109.png" /><img alt="image107" src="../../_images/image110.png" /><img alt="image108" src="../../_images/image111.png" /><img alt="image109" src="../../_images/image112.png" /><img alt="image110" src="../../_images/image113.png" /><img alt="image111" src="../../_images/image114.png" /><img alt="image112" src="../../_images/image115.png" /><img alt="image113" src="../../_images/image116.png" /><img alt="image114" src="../../_images/image117.png" /><img alt="image115" src="../../_images/image118.png" /><img alt="image116" src="../../_images/image119.png" /><img alt="image117" src="../../_images/image120.png" /><img alt="image118" src="../../_images/image121.png" /><img alt="image119" src="../../_images/image122.png" /><img alt="image120" src="../../_images/image123.png" /><img alt="image121" src="../../_images/image124.png" /><img alt="image122" src="../../_images/image125.png" /><img alt="image123" src="../../_images/image126.png" /><img alt="image124" src="../../_images/image127.png" /><a class="reference internal" href="../../_images/image128.png"><img alt="image125" src="../../_images/image128.png" style="width: 0.125in;" /></a><img alt="image126" src="../../_images/image129.png" /><img alt="image127" src="../../_images/image130.png" /><a class="reference internal" href="../../_images/image131.png"><img alt="image128" src="../../_images/image131.png" style="width: 0.11111in;" /></a><a class="reference internal" href="../../_images/image132.png"><img alt="image129" src="../../_images/image132.png" style="width: 0.125in;" /></a><img alt="image130" src="../../_images/image133.png" /><img alt="image131" src="../../_images/image134.png" /><img alt="image132" src="../../_images/image135.png" /><img alt="image133" src="../../_images/image136.png" /><img alt="image134" src="../../_images/image137.png" /><img alt="image135" src="../../_images/image138.png" /><img alt="image136" src="../../_images/image139.png" /><img alt="image137" src="../../_images/image140.png" /><img alt="image138" src="../../_images/image141.png" /><img alt="image139" src="../../_images/image142.png" /><img alt="image140" src="../../_images/image143.png" /><img alt="image141" src="../../_images/image144.png" /><img alt="image142" src="../../_images/image145.png" /><img alt="image143" src="../../_images/image146.png" /><img alt="image144" src="../../_images/image147.png" /><img alt="image145" src="../../_images/image148.png" /><img alt="image146" src="../../_images/image149.png" /><img alt="image147" src="../../_images/image150.png" /><img alt="image148" src="../../_images/image151.png" /><img alt="image149" src="../../_images/image152.png" /><img alt="image150" src="../../_images/image153.png" /><img alt="image151" src="../../_images/image154.png" /><img alt="image152" src="../../_images/image155.png" /><img alt="image153" src="../../_images/image156.png" /><img alt="image154" src="../../_images/image157.png" /><img alt="image155" src="../../_images/image158.png" /><img alt="image156" src="../../_images/image159.png" /><img alt="image157" src="../../_images/image160.png" /><img alt="image158" src="../../_images/image161.png" /><img alt="image159" src="../../_images/image162.png" /><img alt="image160" src="../../_images/image163.png" /><img alt="image161" src="../../_images/image164.png" /><img alt="image162" src="../../_images/image165.png" /><img alt="image163" src="../../_images/image166.png" /><img alt="image164" src="../../_images/image167.png" /><img alt="image165" src="../../_images/image168.png" /><img alt="image166" src="../../_images/image169.png" /><img alt="image167" src="../../_images/image170.png" /><img alt="image168" src="../../_images/image171.png" /><img alt="image169" src="../../_images/image172.png" /><img alt="image170" src="../../_images/image173.png" /><img alt="image171" src="../../_images/image174.png" /><img alt="image172" src="../../_images/image175.png" /><img alt="image173" src="../../_images/image176.png" /><img alt="image174" src="../../_images/image177.png" /><img alt="image175" src="../../_images/image178.png" /><img alt="image176" src="../../_images/image179.png" /><img alt="image177" src="../../_images/image180.png" /><img alt="image178" src="../../_images/image181.png" /><img alt="image179" src="../../_images/image182.png" /><img alt="image180" src="../../_images/image183.png" /><img alt="image181" src="../../_images/image184.png" /><img alt="image182" src="../../_images/image185.png" /><img alt="image183" src="../../_images/image186.png" /><img alt="image184" src="../../_images/image187.png" /><img alt="image185" src="../../_images/image188.png" /><img alt="image186" src="../../_images/image189.png" /><img alt="image187" src="../../_images/image190.png" /><img alt="image188" src="../../_images/image191.png" /><img alt="image189" src="../../_images/image192.png" /><img alt="image190" src="../../_images/image193.png" /><img alt="image191" src="../../_images/image194.png" /><img alt="image192" src="../../_images/image195.png" /><a class="reference internal" href="../../_images/image196.png"><img alt="image193" src="../../_images/image196.png" style="height: 0.11111in;" /></a><img alt="image194" src="../../_images/image197.png" /><img alt="image195" src="../../_images/image198.png" /><img alt="image196" src="../../_images/image199.png" /><img alt="image197" src="../../_images/image200.png" /><img alt="image198" src="../../_images/image201.png" /><img alt="image199" src="../../_images/image202.png" /><img alt="image200" src="../../_images/image203.png" /><img alt="image201" src="../../_images/image204.png" /><img alt="image202" src="../../_images/image205.png" /><img alt="image203" src="../../_images/image206.png" /><img alt="image204" src="../../_images/image207.png" /><img alt="image205" src="../../_images/image208.png" /><img alt="image206" src="../../_images/image209.png" /><img alt="image207" src="../../_images/image210.png" /><img alt="image208" src="../../_images/image211.png" /><img alt="image209" src="../../_images/image212.png" /><img alt="image210" src="../../_images/image213.png" /><img alt="image211" src="../../_images/image214.png" /><img alt="image212" src="../../_images/image215.png" /><img alt="image213" src="../../_images/image216.png" /><img alt="image214" src="../../_images/image217.png" /><img alt="image215" src="../../_images/image218.png" /><img alt="image216" src="../../_images/image219.png" /><img alt="image217" src="../../_images/image220.png" /><img alt="image218" src="../../_images/image221.png" /><img alt="image219" src="../../_images/image222.png" /><img alt="image220" src="../../_images/image223.png" /><img alt="image221" src="../../_images/image224.png" /><img alt="image222" src="../../_images/image225.png" /><img alt="image223" src="../../_images/image226.png" /><img alt="image224" src="../../_images/image227.png" /><img alt="image225" src="../../_images/image228.png" /><img alt="image226" src="../../_images/image229.png" /><img alt="image227" src="../../_images/image230.png" /><img alt="image228" src="../../_images/image231.png" /><img alt="image229" src="../../_images/image232.png" /><img alt="image230" src="../../_images/image233.png" /><img alt="image231" src="../../_images/image234.png" /><img alt="image232" src="../../_images/image235.png" /><img alt="image233" src="../../_images/image236.png" /><img alt="image234" src="../../_images/image237.png" /><img alt="image235" src="../../_images/image238.png" /><img alt="image236" src="../../_images/image239.png" /><img alt="image237" src="../../_images/image240.png" /><img alt="image238" src="../../_images/image241.png" /><img alt="image239" src="../../_images/image242.png" /><img alt="image240" src="../../_images/image243.png" /><img alt="image241" src="../../_images/image244.png" /><img alt="image242" src="../../_images/image245.png" /><img alt="image243" src="../../_images/image246.png" /><img alt="image244" src="../../_images/image247.png" /><img alt="image245" src="../../_images/image248.png" /><img alt="image246" src="../../_images/image249.png" /><img alt="image247" src="../../_images/image250.png" /><img alt="image248" src="../../_images/image251.png" /><img alt="image249" src="../../_images/image252.png" /><img alt="image250" src="../../_images/image253.png" /><img alt="image251" src="../../_images/image254.png" /><img alt="image252" src="../../_images/image255.png" /><img alt="image253" src="../../_images/image256.png" /><img alt="image254" src="../../_images/image257.png" /><img alt="image255" src="../../_images/image258.png" /><img alt="image256" src="../../_images/image259.png" /><img alt="image257" src="../../_images/image260.png" /><img alt="image258" src="../../_images/image261.png" /><img alt="image259" src="../../_images/image262.png" /><img alt="image260" src="../../_images/image263.png" /><img alt="image261" src="../../_images/image264.png" /><img alt="image262" src="../../_images/image265.png" /><img alt="image263" src="../../_images/image266.png" /><img alt="image264" src="../../_images/image267.png" /><img alt="image265" src="../../_images/image268.png" /><img alt="image266" src="../../_images/image269.png" /><a class="reference internal" href="../../_images/image270.png"><img alt="image267" src="../../_images/image270.png" style="width: 0.125in;" /></a><img alt="image268" src="../../_images/image271.png" /><img alt="image269" src="../../_images/image272.png" /><img alt="image270" src="../../_images/image273.png" /><img alt="image271" src="../../_images/image274.png" /><img alt="image272" src="../../_images/image275.png" /><img alt="image273" src="../../_images/image276.png" /><img alt="image274" src="../../_images/image277.png" /><img alt="image275" src="../../_images/image278.png" /><img alt="image276" src="../../_images/image279.png" /><img alt="image277" src="../../_images/image280.png" /><img alt="image278" src="../../_images/image281.png" /><img alt="image279" src="../../_images/image282.png" /><img alt="image280" src="../../_images/image283.png" /><img alt="image281" src="../../_images/image284.png" /><a class="reference internal" href="../../_images/image285.png"><img alt="image282" src="../../_images/image285.png" style="width: 1.20833in; height: 0.11111in;" /></a><img alt="image283" src="../../_images/image286.png" /><img alt="image284" src="../../_images/image287.png" /><img alt="image285" src="../../_images/image275.png" /><img alt="image286" src="../../_images/image284.png" /><a class="reference internal" href="../../_images/image288.png"><img alt="image287" src="../../_images/image288.png" style="width: 0.38889in; height: 0.38889in;" /></a><a class="reference internal" href="../../_images/image289.png"><img alt="image288" src="../../_images/image289.png" style="width: 3.86111in; height: 0.38889in;" /></a><img alt="image289" src="../../_images/image290.png" /><img alt="image290" src="../../_images/image291.png" /><a class="reference internal" href="../../_images/image292.png"><img alt="image291" src="../../_images/image292.png" style="width: 0.125in;" /></a><img alt="image292" src="../../_images/image293.png" /><a class="reference internal" href="../../_images/image294.png"><img alt="image293" src="../../_images/image294.png" style="width: 0.15278in;" /></a><a class="reference internal" href="../../_images/image295.png"><img alt="image294" src="../../_images/image295.png" style="width: 0.125in;" /></a><a class="reference internal" href="../../_images/image296.png"><img alt="image295" src="../../_images/image296.png" style="width: 0.13889in;" /></a><a class="reference internal" href="../../_images/image297.png"><img alt="image296" src="../../_images/image297.png" style="width: 0.125in;" /></a><a class="reference internal" href="../../_images/image298.png"><img alt="image297" src="../../_images/image298.png" style="width: 0.16667in; height: 0.16667in;" /></a><a class="reference internal" href="../../_images/image299.png"><img alt="image298" src="../../_images/image299.png" style="width: 0.15278in; height: 0.15278in;" /></a></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><blockquote>
+<div></div></blockquote>
+<p>image:: vertopal_a4f4eb71612f4fec
+a21df472a270fac2/media/image1.png</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">width<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1.02083in</p>
+</dd>
+<dt class="field-even">height<span class="colon">:</span></dt>
+<dd class="field-even"><p>0.35972in</p>
+</dd>
+</dl>
+</div></blockquote>
+</th>
+<th class="head"><p>20230109</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><blockquote>
+<div><p>（4）点</p>
+</div></blockquote>
+<p>击“Next”，跳转至许可协议对话框：</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>（5）选择接受许可协议，点击“I
+Agree”按钮，进入选择安装路径选择框，如下图所示，</p>
+<p>默认安装路径为C:\pango\PDS_2022.1，建议采用默认路径。</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/image3.png"><img alt="../../_images/image3.png" src="../../_images/image3.png" style="width: 6.72222in;" />
+</a>
+<p>2 / 11</p>
+<p><a class="reference internal" href="../../_images/image300.png"><img alt="image299" src="../../_images/image300.png" style="width: 5.475in; height: 4.24222in;" /></a><img alt="image300" src="../../_images/image301.png" /><a class="reference internal" href="../../_images/image302.png"><img alt="image301" src="../../_images/image302.png" style="width: 0.43056in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image303.png"><img alt="image302" src="../../_images/image303.png" style="width: 1.48611in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image304.png"><img alt="image303" src="../../_images/image304.png" style="width: 0.31944in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image305.png"><img alt="image304" src="../../_images/image305.png" style="width: 0.44444in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image306.png"><img alt="image305" src="../../_images/image306.png" style="width: 0.61111in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image307.png"><img alt="image306" src="../../_images/image307.png" style="width: 0.375in; height: 0.375in;" /></a><a class="reference internal" href="../../_images/image308.png"><img alt="image307" src="../../_images/image308.png" style="width: 0.55556in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image309.png"><img alt="image308" src="../../_images/image309.png" style="width: 0.38889in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image310.png"><img alt="image309" src="../../_images/image310.png" style="width: 0.48611in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image311.png"><img alt="image310" src="../../_images/image311.png" style="width: 0.125in;" /></a><a class="reference internal" href="../../_images/image312.png"><img alt="image311" src="../../_images/image312.png" style="width: 0.125in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image313.png"><img alt="image312" src="../../_images/image313.png" style="width: 0.125in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image314.png"><img alt="image313" src="../../_images/image314.png" style="width: 0.375in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image315.png"><img alt="image314" src="../../_images/image315.png" style="height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image316.png"><img alt="image315" src="../../_images/image316.png" style="width: 0.36111in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image317.png"><img alt="image316" src="../../_images/image317.png" style="width: 0.31944in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image318.png"><img alt="image317" src="../../_images/image318.png" style="width: 0.44444in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image319.png"><img alt="image318" src="../../_images/image319.png" style="width: 0.41667in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image320.png"><img alt="image319" src="../../_images/image320.png" style="width: 5.46528in; height: 4.23469in;" /></a><img alt="image320" src="../../_images/image321.png" /><img alt="image321" src="../../_images/image322.png" /><img alt="image322" src="../../_images/image323.png" /><a class="reference internal" href="../../_images/image324.png"><img alt="image323" src="../../_images/image324.png" style="width: 2.65278in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image325.png"><img alt="image324" src="../../_images/image325.png" style="width: 1.125in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image326.png"><img alt="image325" src="../../_images/image326.png" style="width: 0.76389in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image327.png"><img alt="image326" src="../../_images/image327.png" style="width: 0.31944in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image328.png"><img alt="image327" src="../../_images/image328.png" style="width: 0.44444in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image329.png"><img alt="image328" src="../../_images/image329.png" style="width: 0.75in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image330.png"><img alt="image329" src="../../_images/image330.png" style="width: 0.33333in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image331.png"><img alt="image330" src="../../_images/image331.png" style="width: 1.29167in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image332.png"><img alt="image331" src="../../_images/image332.png" style="width: 3.79167in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image333.png"><img alt="image332" src="../../_images/image333.png" style="width: 0.76389in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image334.png"><img alt="image333" src="../../_images/image334.png" style="width: 2.48611in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image335.png"><img alt="image334" src="../../_images/image335.png" style="width: 1.125in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image336.png"><img alt="image335" src="../../_images/image336.png" style="width: 0.36111in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image337.png"><img alt="image336" src="../../_images/image337.png" style="width: 0.38889in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image338.png"><img alt="image337" src="../../_images/image338.png" style="width: 0.31944in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image339.png"><img alt="image338" src="../../_images/image339.png" style="width: 0.44444in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image340.png"><img alt="image339" src="../../_images/image340.png" style="width: 0.75in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image341.png"><img alt="image340" src="../../_images/image341.png" style="width: 0.33333in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image342.png"><img alt="image341" src="../../_images/image342.png" style="width: 1.29167in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image343.png"><img alt="image342" src="../../_images/image343.png" style="width: 2.66667in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image344.png"><img alt="image343" src="../../_images/image344.png" style="width: 1.125in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image345.png"><img alt="image344" src="../../_images/image345.png" style="width: 0.36111in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image346.png"><img alt="image345" src="../../_images/image346.png" style="width: 0.38889in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image347.png"><img alt="image346" src="../../_images/image347.png" style="width: 0.31944in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image348.png"><img alt="image347" src="../../_images/image348.png" style="width: 0.44444in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image349.png"><img alt="image348" src="../../_images/image349.png" style="width: 0.75in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image350.png"><img alt="image349" src="../../_images/image350.png" style="width: 0.27778in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image351.png"><img alt="image350" src="../../_images/image351.png" style="width: 1.30556in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image352.png"><img alt="image351" src="../../_images/image352.png" style="width: 1.63889in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image353.png"><img alt="image352" src="../../_images/image353.png" style="width: 0.375in; height: 0.36111in;" /></a><a class="reference internal" href="../../_images/image354.png"><img alt="image353" src="../../_images/image354.png" style="width: 0.56944in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image355.png"><img alt="image354" src="../../_images/image355.png" style="width: 0.125in;" /></a><a class="reference internal" href="../../_images/image356.png"><img alt="image355" src="../../_images/image356.png" style="width: 0.125in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image357.png"><img alt="image356" src="../../_images/image357.png" style="width: 0.125in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image358.png"><img alt="image357" src="../../_images/image358.png" style="width: 0.375in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image359.png"><img alt="image358" src="../../_images/image359.png" style="height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image360.png"><img alt="image359" src="../../_images/image360.png" style="width: 0.36111in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image361.png"><img alt="image360" src="../../_images/image361.png" style="width: 0.31944in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image362.png"><img alt="image361" src="../../_images/image362.png" style="width: 0.44444in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image363.png"><img alt="image362" src="../../_images/image363.png" style="width: 0.41667in; height: 0.13889in;" /></a></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><blockquote>
+<div></div></blockquote>
+<p>image:: vertopal_a4f4eb71612f4fec
+a21df472a270fac2/media/image1.png</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">width<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1.02083in</p>
+</dd>
+<dt class="field-even">height<span class="colon">:</span></dt>
+<dd class="field-even"><p>0.35972in</p>
+</dd>
+</dl>
+</div></blockquote>
+</th>
+<th class="head"><p>20230109</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>（6）直接点击“Install”，则跳转到安装界面。</p>
+<p>（7）耐心等待至完成全部安装过程，点击“Finish”，安装完毕。</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/image3.png"><img alt="../../_images/image3.png" src="../../_images/image3.png" style="width: 6.72222in;" />
+</a>
+<p>3 / 11</p>
+<p><a class="reference internal" href="../../_images/image364.png"><img alt="image363" src="../../_images/image364.png" style="width: 5.47917in; height: 4.24545in;" /></a><img alt="image364" src="../../_images/image301.png" /><a class="reference internal" href="../../_images/image365.png"><img alt="image365" src="../../_images/image365.png" style="width: 0.61111in; height: 0.61111in;" /></a><a class="reference internal" href="../../_images/image366.png"><img alt="image366" src="../../_images/image366.png" style="width: 0.79167in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image367.png"><img alt="image367" src="../../_images/image367.png" style="width: 0.56944in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image368.png"><img alt="image368" src="../../_images/image368.png" style="width: 0.54167in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image369.png"><img alt="image369" src="../../_images/image369.png" style="width: 0.26389in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image370.png"><img alt="image370" src="../../_images/image370.png" style="width: 1.19444in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image371.png"><img alt="image371" src="../../_images/image371.png" style="width: 0.30556in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image372.png"><img alt="image372" src="../../_images/image372.png" style="width: 0.29167in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image373.png"><img alt="image373" src="../../_images/image373.png" style="width: 0.72222in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image374.png"><img alt="image374" src="../../_images/image374.png" style="width: 0.625in; height: 0.16667in;" /></a><a class="reference internal" href="../../_images/image375.png"><img alt="image375" src="../../_images/image375.png" style="width: 0.54167in; height: 0.20833in;" /></a><a class="reference internal" href="../../_images/image376.png"><img alt="image376" src="../../_images/image376.png" style="width: 0.30556in; height: 0.16667in;" /></a><a class="reference internal" href="../../_images/image377.png"><img alt="image377" src="../../_images/image377.png" style="width: 1.01389in; height: 0.20833in;" /></a><a class="reference internal" href="../../_images/image378.png"><img alt="image378" src="../../_images/image378.png" style="width: 0.125in;" /></a><a class="reference internal" href="../../_images/image379.png"><img alt="image379" src="../../_images/image379.png" style="width: 0.125in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image380.png"><img alt="image380" src="../../_images/image380.png" style="width: 0.125in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image381.png"><img alt="image381" src="../../_images/image381.png" style="width: 0.375in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image382.png"><img alt="image382" src="../../_images/image382.png" style="height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image383.png"><img alt="image383" src="../../_images/image383.png" style="width: 0.36111in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image384.png"><img alt="image384" src="../../_images/image384.png" style="width: 0.31944in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image385.png"><img alt="image385" src="../../_images/image385.png" style="width: 0.44444in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image386.png"><img alt="image386" src="../../_images/image386.png" style="width: 0.41667in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image387.png"><img alt="image387" src="../../_images/image387.png" style="width: 1.40278in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image388.png"><img alt="image388" src="../../_images/image388.png" style="width: 1.77083in; height: 1.10677in;" /></a></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><blockquote>
+<div></div></blockquote>
+<p>image:: vertopal_a4f4eb71612f4fec
+a21df472a270fac2/media/image1.png</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">width<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1.02083in</p>
+</dd>
+<dt class="field-even">height<span class="colon">:</span></dt>
+<dd class="field-even"><p>0.35972in</p>
+</dd>
+</dl>
+</div></blockquote>
+</th>
+<th class="head"><p>20230109</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>（8）安装完成后，会提示是否需要安装运行库vcredist_VS2017.exe。若电脑之前未安装</p>
+</div></blockquote>
+<p>过则需要安装此运行库后才能运行PDS，点击“是”按钮进行安装；若电脑之前已安装过此运</p>
+<blockquote>
+<div><p>行库则无需再次安装，点击“否”按钮不进行安装即可。</p>
+<p>注：如果不确定，建议点击“是”进行安装，否则可能导致PDS 无法运行。</p>
+<p>（9）点击“是”进入运行库安装界面，选择同意许可条款和条件，点击安装按钮进行安</p>
+<p>装。</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/image3.png"><img alt="../../_images/image3.png" src="../../_images/image3.png" style="width: 6.72222in;" />
+</a>
+<p>4 / 11</p>
+<p><a class="reference internal" href="../../_images/image389.png"><img alt="image389" src="../../_images/image389.png" style="width: 5.34444in; height: 3.33059in;" /></a><a class="reference internal" href="../../_images/image390.png"><img alt="image390" src="../../_images/image390.png" style="width: 0.84722in; height: 0.27778in;" /></a><a class="reference internal" href="../../_images/image391.png"><img alt="image391" src="../../_images/image391.png" style="width: 0.84722in; height: 0.27778in;" /></a><a class="reference internal" href="../../_images/image392.png"><img alt="image392" src="../../_images/image392.png" style="width: 0.15278in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image393.png"><img alt="image393" src="../../_images/image393.png" style="width: 1.40278in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image394.png"><img alt="image394" src="../../_images/image394.png" style="width: 0.16667in; height: 0.16667in;" /></a><a class="reference internal" href="../../_images/image395.png"><img alt="image395" src="../../_images/image395.png" style="width: 5.08333in; height: 1.38889in;" /></a><a class="reference internal" href="../../_images/image396.png"><img alt="image396" src="../../_images/image396.png" style="width: 0.125in;" /></a><a class="reference internal" href="../../_images/image397.png"><img alt="image397" src="../../_images/image397.png" style="width: 1.41667in; height: 0.20833in;" /></a><a class="reference internal" href="../../_images/image398.png"><img alt="image398" src="../../_images/image398.png" style="width: 0.56944in; height: 0.25in;" /></a><a class="reference internal" href="../../_images/image399.png"><img alt="image399" src="../../_images/image399.png" style="width: 1.77778in; height: 0.22222in;" /></a><a class="reference internal" href="../../_images/image400.png"><img alt="image400" src="../../_images/image400.png" style="width: 0.16667in; height: 0.16667in;" /></a><a class="reference internal" href="../../_images/image401.png"><img alt="image401" src="../../_images/image401.png" style="width: 0.15278in; height: 0.16667in;" /></a><a class="reference internal" href="../../_images/image402.png"><img alt="image402" src="../../_images/image402.png" style="width: 0.16667in; height: 0.22222in;" /></a><a class="reference internal" href="../../_images/image403.png"><img alt="image403" src="../../_images/image403.png" style="width: 0.43056in; height: 0.22222in;" /></a><a class="reference internal" href="../../_images/image404.png"><img alt="image404" src="../../_images/image404.png" style="width: 0.18056in; height: 0.22222in;" /></a><a class="reference internal" href="../../_images/image405.png"><img alt="image405" src="../../_images/image405.png" style="width: 0.22222in; height: 0.22222in;" /></a><a class="reference internal" href="../../_images/image406.png"><img alt="image406" src="../../_images/image406.png" style="width: 0.70833in; height: 0.23611in;" /></a><a class="reference internal" href="../../_images/image407.png"><img alt="image407" src="../../_images/image407.png" style="width: 0.88889in; height: 0.23611in;" /></a><a class="reference internal" href="../../_images/image408.png"><img alt="image408" src="../../_images/image408.png" style="width: 0.65278in; height: 0.65278in;" /></a><a class="reference internal" href="../../_images/image409.png"><img alt="image409" src="../../_images/image409.png" style="width: 0.55556in; height: 0.26389in;" /></a><a class="reference internal" href="../../_images/image410.png"><img alt="image410" src="../../_images/image410.png" style="width: 1.31944in; height: 0.22222in;" /></a><a class="reference internal" href="../../_images/image411.png"><img alt="image411" src="../../_images/image411.png" style="width: 0.44444in; height: 0.22222in;" /></a><a class="reference internal" href="../../_images/image412.png"><img alt="image412" src="../../_images/image412.png" style="width: 0.15278in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image413.png"><img alt="image413" src="../../_images/image413.png" style="width: 0.15278in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image414.png"><img alt="image414" src="../../_images/image414.png" style="width: 0.15278in; height: 0.20833in;" /></a><a class="reference internal" href="../../_images/image415.png"><img alt="image415" src="../../_images/image415.png" style="width: 0.44444in; height: 0.20833in;" /></a><a class="reference internal" href="../../_images/image416.png"><img alt="image416" src="../../_images/image416.png" style="width: 0.18056in; height: 0.20833in;" /></a><a class="reference internal" href="../../_images/image417.png"><img alt="image417" src="../../_images/image417.png" style="width: 5.33611in; height: 3.29226in;" /></a><a class="reference internal" href="../../_images/image418.png"><img alt="image418" src="../../_images/image418.png" style="width: 0.22222in; height: 0.20833in;" /></a><a class="reference internal" href="../../_images/image419.png"><img alt="image419" src="../../_images/image419.png" style="width: 0.70833in; height: 0.22222in;" /></a><a class="reference internal" href="../../_images/image420.png"><img alt="image420" src="../../_images/image420.png" style="width: 0.875in; height: 0.22222in;" /></a><a class="reference internal" href="../../_images/image421.png"><img alt="image421" src="../../_images/image421.png" style="width: 0.66667in; height: 0.66667in;" /></a><a class="reference internal" href="../../_images/image422.png"><img alt="image422" src="../../_images/image422.png" style="width: 0.84722in; height: 0.26389in;" /></a><a class="reference internal" href="../../_images/image423.png"><img alt="image423" src="../../_images/image423.png" style="width: 0.98611in; height: 0.25in;" /></a><a class="reference internal" href="../../_images/image424.png"><img alt="image424" src="../../_images/image424.png" style="width: 0.11111in;" /></a><a class="reference internal" href="../../_images/image425.png"><img alt="image425" src="../../_images/image425.png" style="width: 1.40278in; height: 0.20833in;" /></a></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><blockquote>
+<div></div></blockquote>
+<p>image:: vertopal_a4f4eb71612f4fec
+a21df472a270fac2/media/image1.png</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">width<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1.02083in</p>
+</dd>
+<dt class="field-even">height<span class="colon">:</span></dt>
+<dd class="field-even"><p>0.35972in</p>
+</dd>
+</dl>
+</div></blockquote>
+</th>
+<th class="head"><p>20230109</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>（10）安装完成界面点击“关闭”完成安装。</p>
+<p>（11）完成安装后，会提示是否需要安装USB Cable
+Driver。安装点击“是”，否则可能</p>
+<p>导致下载器无法正常使用。</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/image3.png"><img alt="../../_images/image3.png" src="../../_images/image3.png" style="width: 6.72222in;" />
+</a>
+<p>5 / 11</p>
+<p><a class="reference internal" href="../../_images/image426.png"><img alt="image426" src="../../_images/image426.png" style="width: 5.42083in; height: 4.20025in;" /></a><img alt="image427" src="../../_images/image427.png" /><a class="reference internal" href="../../_images/image428.png"><img alt="image428" src="../../_images/image428.png" style="width: 0.52778in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image429.png"><img alt="image429" src="../../_images/image429.png" style="width: 0.33333in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image430.png"><img alt="image430" src="../../_images/image430.png" style="width: 0.84722in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image431.png"><img alt="image431" src="../../_images/image431.png" style="width: 0.125in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image432.png"><img alt="image432" src="../../_images/image432.png" style="width: 0.16667in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image433.png"><img alt="image433" src="../../_images/image433.png" style="height: 0.125in;" /></a><a class="reference internal" href="../../_images/image434.png"><img alt="image434" src="../../_images/image434.png" style="width: 0.34722in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image435.png"><img alt="image435" src="../../_images/image435.png" style="width: 0.31944in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image436.png"><img alt="image436" src="../../_images/image436.png" style="width: 0.44444in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image437.png"><img alt="image437" src="../../_images/image437.png" style="width: 0.40278in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image438.png"><img alt="image438" src="../../_images/image438.png" style="width: 0.18056in; height: 0.19444in;" /></a><a class="reference internal" href="../../_images/image439.png"><img alt="image439" src="../../_images/image439.png" style="width: 0.66667in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image440.png"><img alt="image440" src="../../_images/image440.png" style="width: 1.11111in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image441.png"><img alt="image441" src="../../_images/image441.png" style="width: 0.36111in; height: 0.36111in;" /></a><a class="reference internal" href="../../_images/image442.png"><img alt="image442" src="../../_images/image442.png" style="width: 0.59722in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image443.png"><img alt="image443" src="../../_images/image443.png" style="width: 0.68056in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image444.png"><img alt="image444" src="../../_images/image444.png" style="width: 0.11111in;" /></a><a class="reference internal" href="../../_images/image445.png"><img alt="image445" src="../../_images/image445.png" style="width: 0.125in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image446.png"><img alt="image446" src="../../_images/image446.png" style="width: 0.125in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image447.png"><img alt="image447" src="../../_images/image447.png" style="width: 0.36111in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image448.png"><img alt="image448" src="../../_images/image448.png" style="height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image449.png"><img alt="image449" src="../../_images/image449.png" style="width: 0.34722in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image450.png"><img alt="image450" src="../../_images/image450.png" style="width: 0.31944in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image451.png"><img alt="image451" src="../../_images/image451.png" style="width: 0.44444in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image452.png"><img alt="image452" src="../../_images/image452.png" style="width: 0.40278in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image453.png"><img alt="image453" src="../../_images/image453.png" style="width: 5.35972in; height: 4.10843in;" /></a><a class="reference internal" href="../../_images/image454.png"><img alt="image454" src="../../_images/image454.png" style="width: 0.63889in; height: 0.63889in;" /></a><img alt="image455" src="../../_images/image455.png" /><img alt="image456" src="../../_images/image456.png" /><a class="reference internal" href="../../_images/image457.png"><img alt="image457" src="../../_images/image457.png" style="width: 0.47222in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image458.png"><img alt="image458" src="../../_images/image458.png" style="width: 0.38889in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image459.png"><img alt="image459" src="../../_images/image459.png" style="width: 0.44444in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image460.png"><img alt="image460" src="../../_images/image460.png" style="width: 0.90278in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image461.png"><img alt="image461" src="../../_images/image461.png" style="width: 1.84722in; height: 0.27778in;" /></a><a class="reference internal" href="../../_images/image462.png"><img alt="image462" src="../../_images/image462.png" style="height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image463.png"><img alt="image463" src="../../_images/image463.png" style="width: 2.5in; height: 0.19444in;" /></a><img alt="image464" src="../../_images/image464.png" /><a class="reference internal" href="../../_images/image465.png"><img alt="image465" src="../../_images/image465.png" style="width: 0.15278in;" /></a><img alt="image466" src="../../_images/image466.png" /><a class="reference internal" href="../../_images/image467.png"><img alt="image467" src="../../_images/image467.png" style="width: 0.26389in;" /></a><img alt="image468" src="../../_images/image468.png" /><img alt="image469" src="../../_images/image469.png" /><img alt="image470" src="../../_images/image470.png" /><img alt="image471" src="../../_images/image468.png" /><img alt="image472" src="../../_images/image471.png" /><img alt="image473" src="../../_images/image472.png" /><img alt="image474" src="../../_images/image473.png" /><img alt="image475" src="../../_images/image474.png" /><img alt="image476" src="../../_images/image475.png" /><img alt="image477" src="../../_images/image476.png" /><a class="reference internal" href="../../_images/image477.png"><img alt="image478" src="../../_images/image477.png" style="width: 1.27778in; height: 0.13889in;" /></a></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><blockquote>
+<div></div></blockquote>
+<p>image:: vertopal_a4f4eb71612f4fec
+a21df472a270fac2/media/image1.png</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">width<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1.02083in</p>
+</dd>
+<dt class="field-even">height<span class="colon">:</span></dt>
+<dd class="field-even"><p>0.35972in</p>
+</dd>
+</dl>
+</div></blockquote>
+</th>
+<th class="head"><p>20230109</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>（12）点击“是”进入驱动程序安装界面：</p>
+<p>（13）点击“下一步”进入安装驱动程序许可协议界面。点击“我接受这个协议”，然后点击</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/image3.png"><img alt="../../_images/image3.png" src="../../_images/image3.png" style="width: 6.72222in;" />
+</a>
+<p>6 / 11</p>
+<p><a class="reference internal" href="../../_images/image478.png"><img alt="image479" src="../../_images/image478.png" style="width: 5.1in; height: 3.90934in;" /></a><a class="reference internal" href="../../_images/image479.png"><img alt="image480" src="../../_images/image479.png" style="width: 0.15278in; height: 0.19444in;" /></a><img alt="image481" src="../../_images/image480.png" /><a class="reference internal" href="../../_images/image481.png"><img alt="image482" src="../../_images/image481.png" style="width: 0.51389in; height: 0.13889in;" /></a><img alt="image483" src="../../_images/image482.png" /><a class="reference internal" href="../../_images/image483.png"><img alt="image484" src="../../_images/image483.png" style="width: 0.15278in;" /></a><img alt="image485" src="../../_images/image484.png" /><a class="reference internal" href="../../_images/image485.png"><img alt="image486" src="../../_images/image485.png" style="width: 0.25in;" /></a><img alt="image487" src="../../_images/image486.png" /><img alt="image488" src="../../_images/image487.png" /><img alt="image489" src="../../_images/image488.png" /><img alt="image490" src="../../_images/image489.png" /><a class="reference internal" href="../../_images/image490.png"><img alt="image491" src="../../_images/image490.png" style="width: 0.11111in;" /></a><img alt="image492" src="../../_images/image491.png" /><img alt="image493" src="../../_images/image492.png" /><img alt="image494" src="../../_images/image493.png" /><img alt="image495" src="../../_images/image494.png" /><img alt="image496" src="../../_images/image495.png" /><a class="reference internal" href="../../_images/image496.png"><img alt="image497" src="../../_images/image496.png" style="width: 0.26389in;" /></a><img alt="image498" src="../../_images/image497.png" /><img alt="image499" src="../../_images/image498.png" /><img alt="image500" src="../../_images/image499.png" /><img alt="image501" src="../../_images/image500.png" /><img alt="image502" src="../../_images/image501.png" /><img alt="image503" src="../../_images/image502.png" /><a class="reference internal" href="../../_images/image503.png"><img alt="image504" src="../../_images/image503.png" style="width: 1.22222in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image504.png"><img alt="image505" src="../../_images/image504.png" style="width: 5.11806in; height: 3.92318in;" /></a><a class="reference internal" href="../../_images/image505.png"><img alt="image506" src="../../_images/image505.png" style="width: 0.61111in; height: 0.61111in;" /></a><a class="reference internal" href="../../_images/image506.png"><img alt="image507" src="../../_images/image506.png" style="width: 3.16667in; height: 0.77778in;" /></a><img alt="image508" src="../../_images/image507.png" /><a class="reference internal" href="../../_images/image508.png"><img alt="image509" src="../../_images/image508.png" style="width: 1.13889in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image509.png"><img alt="image510" src="../../_images/image509.png" style="width: 1.875in; height: 0.27778in;" /></a><a class="reference internal" href="../../_images/image510.png"><img alt="image511" src="../../_images/image510.png" style="width: 2in; height: 0.15278in;" /></a><a class="reference internal" href="../../_images/image511.png"><img alt="image512" src="../../_images/image511.png" style="width: 2.38889in; height: 0.19444in;" /></a><img alt="image513" src="../../_images/image512.png" /><a class="reference internal" href="../../_images/image513.png"><img alt="image514" src="../../_images/image513.png" style="width: 0.15278in;" /></a><img alt="image515" src="../../_images/image514.png" /><a class="reference internal" href="../../_images/image515.png"><img alt="image516" src="../../_images/image515.png" style="width: 0.25in;" /></a><img alt="image517" src="../../_images/image516.png" /><img alt="image518" src="../../_images/image517.png" /><img alt="image519" src="../../_images/image518.png" /><img alt="image520" src="../../_images/image519.png" /><a class="reference internal" href="../../_images/image520.png"><img alt="image521" src="../../_images/image520.png" style="width: 0.11111in;" /></a><img alt="image522" src="../../_images/image521.png" /><img alt="image523" src="../../_images/image522.png" /><img alt="image524" src="../../_images/image523.png" /><img alt="image525" src="../../_images/image524.png" /><img alt="image526" src="../../_images/image525.png" /><a class="reference internal" href="../../_images/image526.png"><img alt="image527" src="../../_images/image526.png" style="width: 1.22222in; height: 0.125in;" /></a></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><blockquote>
+<div></div></blockquote>
+<p>image:: vertopal_a4f4eb71612f4fec
+a21df472a270fac2/media/image1.png</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">width<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1.02083in</p>
+</dd>
+<dt class="field-even">height<span class="colon">:</span></dt>
+<dd class="field-even"><p>0.35972in</p>
+</dd>
+</dl>
+</div></blockquote>
+</th>
+<th class="head"><p>20230109</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>“下一步”。</p>
+<p>（14）点击“完成”，完成驱动程序的安装。</p>
+</div></blockquote>
+<p>（15）完成安装后，会提示是否需要安装ParellelPortDriver。安装点击“是”。</p>
+<a class="reference internal image-reference" href="../../_images/image3.png"><img alt="../../_images/image3.png" src="../../_images/image3.png" style="width: 6.72222in;" />
+</a>
+<p>7 / 11</p>
+<p><a class="reference internal" href="../../_images/image529.png"><img alt="image528" src="../../_images/image529.png" style="width: 4.59722in; height: 3.56209in;" /></a><img alt="image529" src="../../_images/image530.png" /><img alt="image530" src="../../_images/image531.png" /><a class="reference internal" href="../../_images/image532.png"><img alt="image531" src="../../_images/image532.png" style="width: 0.45833in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image533.png"><img alt="image532" src="../../_images/image533.png" style="width: 0.22222in;" /></a><a class="reference internal" href="../../_images/image534.png"><img alt="image533" src="../../_images/image534.png" style="width: 0.875in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image535.png"><img alt="image534" src="../../_images/image535.png" style="width: 0.11111in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image536.png"><img alt="image535" src="../../_images/image536.png" style="width: 0.15278in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image537.png"><img alt="image536" src="../../_images/image537.png" style="height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image538.png"><img alt="image537" src="../../_images/image538.png" style="width: 0.30556in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image539.png"><img alt="image538" src="../../_images/image539.png" style="width: 0.27778in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image540.png"><img alt="image539" src="../../_images/image540.png" style="width: 0.375in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image541.png"><img alt="image540" src="../../_images/image541.png" style="width: 0.34722in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image542.png"><img alt="image541" src="../../_images/image542.png" style="width: 1.54167in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image543.png"><img alt="image542" src="../../_images/image543.png" style="width: 0.31944in; height: 0.31944in;" /></a><a class="reference internal" href="../../_images/image544.png"><img alt="image543" src="../../_images/image544.png" style="width: 1.09722in; height: 0.125in;" /></a><img alt="image544" src="../../_images/image545.png" /><img alt="image545" src="../../_images/image546.png" /><a class="reference internal" href="../../_images/image547.png"><img alt="image546" src="../../_images/image547.png" style="width: 0.31944in; height: 0.125in;" /></a><img alt="image547" src="../../_images/image548.png" /><a class="reference internal" href="../../_images/image549.png"><img alt="image548" src="../../_images/image549.png" style="width: 0.30556in;" /></a><a class="reference internal" href="../../_images/image550.png"><img alt="image549" src="../../_images/image550.png" style="width: 0.27778in;" /></a><a class="reference internal" href="../../_images/image551.png"><img alt="image550" src="../../_images/image551.png" style="width: 0.375in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image552.png"><img alt="image551" src="../../_images/image552.png" style="width: 0.34722in; height: 0.125in;" /></a><a class="reference internal" href="../../_images/image553.png"><img alt="image552" src="../../_images/image553.png" style="width: 4.60278in; height: 3.56639in;" /></a><img alt="image553" src="../../_images/image554.png" /><img alt="image554" src="../../_images/image555.png" /><img alt="image555" src="../../_images/image556.png" /><img alt="image556" src="../../_images/image557.png" /><img alt="image557" src="../../_images/image558.png" /><img alt="image558" src="../../_images/image559.png" /><a class="reference internal" href="../../_images/image560.png"><img alt="image559" src="../../_images/image560.png" style="width: 0.15278in;" /></a><img alt="image560" src="../../_images/image561.png" /><a class="reference internal" href="../../_images/image562.png"><img alt="image561" src="../../_images/image562.png" style="width: 0.30556in;" /></a><a class="reference internal" href="../../_images/image563.png"><img alt="image562" src="../../_images/image563.png" style="width: 0.31944in;" /></a><img alt="image563" src="../../_images/image564.png" /><img alt="image564" src="../../_images/image565.png" /><img alt="image565" src="../../_images/image566.png" /><img alt="image566" src="../../_images/image567.png" /><img alt="image567" src="../../_images/image568.png" /><img alt="image568" src="../../_images/image569.png" /><img alt="image569" src="../../_images/image570.png" /><img alt="image570" src="../../_images/image571.png" /><img alt="image571" src="../../_images/image572.png" /><a class="reference internal" href="../../_images/image573.png"><img alt="image572" src="../../_images/image573.png" style="width: 1.70833in; height: 0.30556in;" /></a><a class="reference internal" href="../../_images/image574.png"><img alt="image573" src="../../_images/image574.png" style="width: 0.15278in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image575.png"><img alt="image574" src="../../_images/image575.png" style="width: 0.36111in; height: 0.34722in;" /></a><a class="reference internal" href="../../_images/image576.png"><img alt="image575" src="../../_images/image576.png" style="width: 1.625in; height: 0.34722in;" /></a><a class="reference internal" href="../../_images/image577.png"><img alt="image576" src="../../_images/image577.png" style="width: 0.11111in;" /></a><a class="reference internal" href="../../_images/image578.png"><img alt="image577" src="../../_images/image578.png" style="width: 0.125in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image579.png"><img alt="image578" src="../../_images/image579.png" style="width: 0.125in; height: 0.13889in;" /></a><a class="reference internal" href="../../_images/image580.png"><img alt="image579" src="../../_images/image580.png" style="width: 0.43056in; height: 0.15278in;" /></a></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><blockquote>
+<div></div></blockquote>
+<p>image:: vertopal_a4f4eb71612f4fec
+a21df472a270fac2/media/image1.png</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">width<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1.02083in</p>
+</dd>
+<dt class="field-even">height<span class="colon">:</span></dt>
+<dd class="field-even"><p>0.35972in</p>
+</dd>
+</dl>
+</div></blockquote>
+</th>
+<th class="head"><p>20230109</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>（16）点击“是”进行并口驱动程序安装。</p>
+<img alt="../../_images/image527.png" src="../../_images/image527.png" />
+<p>（17）完成后点击“确定”，结束安装。在桌面上看到如下图标：</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/image528.png"><img alt="../../_images/image528.png" src="../../_images/image528.png" style="width: 1.05556in; height: 1.28889in;" />
+</a>
+<a class="reference internal image-reference" href="../../_images/image3.png"><img alt="../../_images/image3.png" src="../../_images/image3.png" style="width: 6.72222in;" />
+</a>
+<p>8 / 11</p>
+<p><a class="reference internal" href="../../_images/image581.png"><img alt="image580" src="../../_images/image581.png" style="width: 4.79861in; height: 5.31163in;" /></a><a class="reference internal" href="../../_images/image582.png"><img alt="image581" src="../../_images/image582.png" style="width: 0.11111in; height: 0.11111in;" /></a><a class="reference internal" href="../../_images/image583.png"><img alt="image582" src="../../_images/image583.png" style="width: 0.47222in; height: 0.13889in;" /></a></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><blockquote>
+<div></div></blockquote>
+<p>image:: vertopal_a4f4eb71612f4fec
+a21df472a270fac2/media/image1.png</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">width<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1.02083in</p>
+</dd>
+<dt class="field-even">height<span class="colon">:</span></dt>
+<dd class="field-even"><p>0.35972in</p>
+</dd>
+</dl>
+</div></blockquote>
+</th>
+<th class="head"><p>20230109</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><div class="line-block">
+<div class="line">4．License 关联，环境变量设置</div>
+<div class="line">软件完成安装后，Pango Design Suite 需要License 文件才能正常使用。</div>
+</div>
+<div class="line-block">
+<div class="line">注：</div>
+<div class="line">（1）License 申请请联系相关销售，提供相关资料，他会帮您申请；</div>
+<div class="line">（2）若只使用Verilog 则只需申请PDS License 即可，若使用VHDL
+或System verilog则还需要申请Synplify license；</div>
+<div class="line">（3）为方便管理license 文件，建议在PDS
+软件安装目录下新建一个license 文件夹存放license 文件。</div>
+</div>
+<p>首先在电脑上打开运行窗口，接着在窗口内输入sysdm.cpl
+然后回车。在系统属性界面内选择高级，然后点击环境变量，进行设置。</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/image3.png"><img alt="../../_images/image3.png" src="../../_images/image3.png" style="width: 6.72222in;" />
+</a>
+<p>9 / 11</p>
+<p><a class="reference internal" href="../../_images/image584.png"><img alt="image583" src="../../_images/image584.png" style="width: 6.48472in; height: 4.50481in;" /></a><img alt="image584" src="../../_images/image585.png" /><a class="reference internal" href="../../_images/image586.png"><img alt="image585" src="../../_images/image586.png" style="width: 0.27778in;" /></a><img alt="image586" src="../../_images/image587.png" /><img alt="image587" src="../../_images/image588.png" /><img alt="image588" src="../../_images/image589.png" /><img alt="image589" src="../../_images/image590.png" /><a class="reference internal" href="../../_images/image591.png"><img alt="image590" src="../../_images/image591.png" style="width: 0.11111in;" /></a><a class="reference internal" href="../../_images/image592.png"><img alt="image591" src="../../_images/image592.png" style="width: 0.11111in;" /></a><img alt="image592" src="../../_images/image593.png" /><img alt="image593" src="../../_images/image594.png" /><img alt="image594" src="../../_images/image595.png" /><a class="reference internal" href="../../_images/image596.png"><img alt="image595" src="../../_images/image596.png" style="width: 0.11111in;" /></a><img alt="image596" src="../../_images/image597.png" /><a class="reference internal" href="../../_images/image598.png"><img alt="image597" src="../../_images/image598.png" style="width: 0.125in;" /></a><a class="reference internal" href="../../_images/image599.png"><img alt="image598" src="../../_images/image599.png" style="width: 0.16667in;" /></a><img alt="image599" src="../../_images/image600.png" /><img alt="image600" src="../../_images/image601.png" /><img alt="image601" src="../../_images/image602.png" /><img alt="image602" src="../../_images/image603.png" /><img alt="image603" src="../../_images/image604.png" /><img alt="image604" src="../../_images/image605.png" /><img alt="image605" src="../../_images/image606.png" /><img alt="image606" src="../../_images/image607.png" /><img alt="image607" src="../../_images/image608.png" /><img alt="image608" src="../../_images/image609.png" /><img alt="image609" src="../../_images/image610.png" /><img alt="image610" src="../../_images/image611.png" /><img alt="image611" src="../../_images/image612.png" /><img alt="image612" src="../../_images/image613.png" /><img alt="image613" src="../../_images/image614.png" /><img alt="image614" src="../../_images/image615.png" /><img alt="image615" src="../../_images/image616.png" /><img alt="image616" src="../../_images/image617.png" /><img alt="image617" src="../../_images/image618.png" /><img alt="image618" src="../../_images/image619.png" /><img alt="image619" src="../../_images/image620.png" /><a class="reference internal" href="../../_images/image621.png"><img alt="image620" src="../../_images/image621.png" style="width: 0.15278in;" /></a><a class="reference internal" href="../../_images/image622.png"><img alt="image621" src="../../_images/image622.png" style="width: 0.31944in;" /></a><a class="reference internal" href="../../_images/image623.png"><img alt="image622" src="../../_images/image623.png" style="width: 0.125in;" /></a><img alt="image623" src="../../_images/image624.png" /><img alt="image624" src="../../_images/image625.png" /><img alt="image625" src="../../_images/image626.png" /><img alt="image626" src="../../_images/image627.png" /><img alt="image627" src="../../_images/image628.png" /><a class="reference internal" href="../../_images/image629.png"><img alt="image628" src="../../_images/image629.png" style="width: 1in; height: 0.31944in;" /></a><img alt="image629" src="../../_images/image619.png" /><img alt="image630" src="../../_images/image620.png" /><img alt="image631" src="../../_images/image624.png" /><img alt="image632" src="../../_images/image625.png" /><img alt="image633" src="../../_images/image626.png" /><img alt="image634" src="../../_images/image628.png" /><img alt="image635" src="../../_images/image630.png" /><img alt="image636" src="../../_images/image631.png" /><img alt="image637" src="../../_images/image632.png" /><img alt="image638" src="../../_images/image633.png" /></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><blockquote>
+<div></div></blockquote>
+<p>image:: vertopal_a4f4eb71612f4fec
+a21df472a270fac2/media/image1.png</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">width<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1.02083in</p>
+</dd>
+<dt class="field-even">height<span class="colon">:</span></dt>
+<dd class="field-even"><p>0.35972in</p>
+</dd>
+</dl>
+</div></blockquote>
+</th>
+<th class="head"><p>20230109</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><div class="line-block">
+<div class="line">4.1 PDS license 环境变量设置</div>
+<div class="line">若PDS license 文件路径为：D:\pango\license\pds_node-locked.lic
+直接设置环境变量：</div>
+<div class="line">变量名：PANGO_LICENSE_FILE</div>
+<div class="line">变量值：D:\pango\license\pds_node-locked.lic</div>
+</div>
+<div class="line-block">
+<div class="line">4.2 Synplify license 环境变量设置</div>
+<div class="line">若使用Synplify 综合工具也需要相应的OEM License 文件才能使用。
+若Synplify license 文件路径：E:
+\pango\license\oem_node-locked.lic 直接设置环境变量：</div>
+<div class="line">变量名：SNPSLMD_LICENSE_FILE</div>
+<div class="line">变量值：E:\license\oem_node-locked.lic 即可。</div>
+</div>
+<p>注：因OEM 所在路径不支持空格，故不支持在含空格的路径下安装</p>
+</div></blockquote>
+<a class="reference internal image-reference" href="../../_images/image3.png"><img alt="../../_images/image3.png" src="../../_images/image3.png" style="width: 6.72222in;" />
+</a>
+<p>10 / 11</p>
+<p><a class="reference internal" href="../../_images/image634.png"><img alt="image639" src="../../_images/image634.png" style="width: 6.59722in; height: 4.66478in;" /></a><img alt="image640" src="../../_images/image635.png" /><img alt="image641" src="../../_images/image636.png" /><img alt="image642" src="../../_images/image637.png" /><img alt="image643" src="../../_images/image638.png" /><img alt="image644" src="../../_images/image639.png" /><img alt="image645" src="../../_images/image640.png" /><img alt="image646" src="../../_images/image641.png" /><img alt="image647" src="../../_images/image642.png" /><a class="reference internal" href="../../_images/image643.png"><img alt="image648" src="../../_images/image643.png" style="width: 0.13889in;" /></a><a class="reference internal" href="../../_images/image644.png"><img alt="image649" src="../../_images/image644.png" style="width: 0.125in;" /></a><a class="reference internal" href="../../_images/image645.png"><img alt="image650" src="../../_images/image645.png" style="width: 0.11111in;" /></a><img alt="image651" src="../../_images/image646.png" /><img alt="image652" src="../../_images/image647.png" /><a class="reference internal" href="../../_images/image648.png"><img alt="image653" src="../../_images/image648.png" style="width: 0.11111in;" /></a><img alt="image654" src="../../_images/image649.png" /><img alt="image655" src="../../_images/image650.png" /><a class="reference internal" href="../../_images/image651.png"><img alt="image656" src="../../_images/image651.png" style="width: 0.15278in;" /></a><img alt="image657" src="../../_images/image652.png" /><a class="reference internal" href="../../_images/image653.png"><img alt="image658" src="../../_images/image653.png" style="width: 0.13889in;" /></a><a class="reference internal" href="../../_images/image654.png"><img alt="image659" src="../../_images/image654.png" style="width: 0.68056in;" /></a><img alt="image660" src="../../_images/image655.png" /><a class="reference internal" href="../../_images/image656.png"><img alt="image661" src="../../_images/image656.png" style="width: 0.13889in;" /></a><img alt="image662" src="../../_images/image657.png" /><img alt="image663" src="../../_images/image658.png" /><img alt="image664" src="../../_images/image659.png" /><img alt="image665" src="../../_images/image660.png" /><a class="reference internal" href="../../_images/image661.png"><img alt="image666" src="../../_images/image661.png" style="width: 0.13889in;" /></a><img alt="image667" src="../../_images/image662.png" /><a class="reference internal" href="../../_images/image663.png"><img alt="image668" src="../../_images/image663.png" style="width: 0.13889in;" /></a><img alt="image669" src="../../_images/image664.png" /><img alt="image670" src="../../_images/image665.png" /><a class="reference internal" href="../../_images/image666.png"><img alt="image671" src="../../_images/image666.png" style="width: 0.15278in;" /></a><img alt="image672" src="../../_images/image667.png" /><img alt="image673" src="../../_images/image668.png" /><img alt="image674" src="../../_images/image669.png" /><a class="reference internal" href="../../_images/image670.png"><img alt="image675" src="../../_images/image670.png" style="width: 0.16667in;" /></a><img alt="image676" src="../../_images/image671.png" /><a class="reference internal" href="../../_images/image672.png"><img alt="image677" src="../../_images/image672.png" style="width: 0.13889in; height: 0.13889in;" /></a><img alt="image678" src="../../_images/image673.png" /><img alt="image679" src="../../_images/image674.png" /><img alt="image680" src="../../_images/image675.png" /><img alt="image681" src="../../_images/image676.png" /><img alt="image682" src="../../_images/image677.png" /><img alt="image683" src="../../_images/image678.png" /></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><blockquote>
+<div></div></blockquote>
+<p>image:: vertopal_a4f4eb71612f4fec
+a21df472a270fac2/media/image1.png</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">width<span class="colon">:</span></dt>
+<dd class="field-odd"><p>1.02083in</p>
+</dd>
+<dt class="field-even">height<span class="colon">:</span></dt>
+<dd class="field-even"><p>0.35972in</p>
+</dd>
+</dl>
+</div></blockquote>
+</th>
+<th class="head"><p>20230109</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../_images/image3.png"><img alt="../../_images/image3.png" src="../../_images/image3.png" style="width: 6.72222in;" />
+</a>
+<p>11 / 11</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Demo_document.html" class="btn btn-neutral float-left" title="Pangupro_100" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, 深圳市小眼睛科技有限公司.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
